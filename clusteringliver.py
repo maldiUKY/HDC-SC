@@ -41,28 +41,24 @@ fildid='liver'
 
 
 ########cluster a single sample############
-#clustersamples(fildid)
-
+clustersamples(fildid)
 
 #generate adata for DE analysis
-#desamples(modeldir,fildid)
+desamples(modeldir,fildid)
 
 
 #######umap plot and spatial plot##########
-#plotsingle(modeldir,fildid,figdir)
-#clusterlist=['0','1','6','12']
-#plotsinglegrey(modeldir,fildid,figdir,clusterlist,'_ROIcluster')
-#plotsinglegrey_name(modeldir,fildid,figdir,clusterlist,clustername[fildid])
+plotsingle(modeldir,fildid,figdir)
+clusterlist=['0','1','6','12']
+plotsinglegrey(modeldir,fildid,figdir,clusterlist,'_ROIcluster')
+plotsinglegrey_name(modeldir,fildid,figdir,clusterlist,clustername[fildid])
 
-#matrixlist=['16','14','13','11']
-#plotsinglegrey(modeldir,fildid,figdir,matrixlist,'_matrix')
-#plotsinglematrix(modeldir,fildid,figdir,matrixlist)
+matrixlist=['16','14','13','11']
+plotsinglegrey(modeldir,fildid,figdir,matrixlist,'_matrix')
+plotsinglematrix(modeldir,fildid,figdir,matrixlist)
 
 
-glycan=['689.1874','1079.5204','1663.5862']
-
-#glycan=['1175.3761','1743.5917','1663.5862']
-
+glycan=['689.1874','1079.5204','1663.5862','1175.3761','1743.5917','1663.5862']
 for feat in glycan:
     plotsingleglycan(modeldir,fildid,figdir,feat)
 
