@@ -1,3 +1,5 @@
+#©2021 Qi Sun
+
 from util import scanpycluster
 from plotutil import plotsingle,plotsinglegrey,plotsinglematrix,plotsingleglycan,plotsinglegrey_name
 from deutil import getadata
